@@ -1,0 +1,44 @@
+Day 47:
+==========
+
+Assertion in Python
+========================
+An assertion is a debugging aid used to test conditions during program execution.
+If the condition is True, the program continues.
+If False, Python raises an AssertionError.
+
+Syntax:
+assert condition, "error message"
+
+
+a) Simple Assertion
+============================
+A simple assertion checks a condition without a custom message.
+
+Example:
+x = 10
+assert x > 0
+print("x is positive")
+
+
+If the condition fails:
+
+assert x < 0   # AssertionError
+
+Key Points:
+Used for internal checks
+Helps catch logical errors early
+
+
+b) Augmented Assertion
+=============================
+An augmented assertion includes a custom error message for better debugging.
+
+Example:
+age = 15
+assert age >= 18, "Age must be 18 or above"
+
+Key Points:
+Provides meaningful error messages
+Improves readability and debugging
+Can be disabled using -O optimization flag
